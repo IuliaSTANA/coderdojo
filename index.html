@@ -1,1 +1,339 @@
-Hello world
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+  <title>CoderDojo Nijmegen April</title>
+  <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="presentation">
+
+  <ul>
+    <li class="button cancel" id="back">Achter</li>
+    <li class="button done" id="next">Voor</li>
+  </ul>
+
+<div class="slides">
+
+
+<div class="slide intro">
+<header>
+<h1><br>Scratch blokken en variabelen</h1>
+<h2>Programmeren<br>
+in Scratch</h2>
+</header>
+<p><a target="_blank" href="http://iuliastana.github.io/coderdojo">iuliastana.github.io/coderdojo</a></p>
+</div>
+
+<div class="slide">
+    <header>
+      <h1>Wat leer je?</h1>
+    </header>
+    <section class="content">
+        <ul>
+			<li>Een Scratch spel maken.</li>
+			<li>Wat een <strong>variabele</strong> is en hoe je deze kunt gebruiken.</li>
+            <li>Het maken van <strong>blokken</strong> en waarom blokken belangrijk zijn.</li>
+			<li>Deze concepten zijn niet alleen voor Scratch maar voor <strong>alle</strong> programmeertalen belangrijk.</li>
+		</ul>
+      </section>
+</div>
+
+
+
+<div class="slide">
+    <header>
+      <h1>Voorbeeld: Mijn spel</h1>
+    </header>
+    <section class="content">
+		Dit is mijn klein spelletje in Scratch:<p><a href="https://scratch.mit.edu/projects/103330354/"> Iulia's Scratch Spel.</a></p>
+	</section>
+</div>
+
+
+
+<div class="slide">
+    <header>
+      <h1>Ken jij Scratch al?</h1>
+    </header>
+    <section class="content">
+        <ul>
+			<li>Maak een nieuw project aan en ga meteen verder.</li>
+			<li>Heb jij Scratch vooraf geïnstalleerd? Ga direct aan de gang.</li>
+            <li>Geen applicatie geïnstallerd? Ga naar <a target="_blank" href="https://scratch.mit.edu/">https://scratch.mit.edu/</a> en klik op <strong>Create</strong>.</li>
+			<li>Om de Nederlandse taal te gebruiken klik op het kleine balletje links boven en selecteer Nederlands.</li>
+			<li><img src="images/change_language.png" alt="Hoe je je taal verandert in Scratch" /></li>
+			<li>Als je via de website werkt, is het handiger om een account te hebben om jouw werk te bewaren en delen, maar dat hoeft niet. Je kan altijd je eigen werk naar je computer downloaden.</li>
+			<li><small>Als je op een MacBook werkt dan moet je laptop ondersteuning hebben voor Flash.</small></li>
+		</ul>
+      </section>
+</div>
+
+
+<div class="slide">
+    <header>
+      <h1>Hoe het spel werkt</h1>
+    </header>
+    <section class="content">
+        <ol>
+            <li>Vierkanten van verschillende maten tekenen op willekeurige plekken.</li>
+			<li>Sprite veranderen en het eerste niveau starten. Het huidige niveau is zichtbaar.</li>
+			<li>Voor iedere vierkant die de sprite aanraakt verlies je punten. De punten zijn zichtbaar.</li>
+            <li>Steeds wanneer een niveau afgemaakt is, worden nieuwe vierkanten getekend.</li>
+		</ol>
+      </section>
+</div>
+
+
+
+<div class="slide">
+    <header>
+      <h1>Vierkanten maken</h1>
+    </header>
+    <section class="content">
+        <ul>
+            <li>Eerste stap: klein beginnen. Zo kunnen wij een vierkant maken:</li>
+			<li><img src="images/make_square01.png" alt="Een vierkant maken in Scratch" /></li>
+			<li>Als je dit uitvoert, krijg je een vierkant op dezelfde plaats in dezelfde grootte. (De plek verandert als je de sprite op een andere plek neerzet)</li>
+            <li>Om de sprite op een andere plek te zetten moeten we de volgende instructie gebruiken: <img src="images/move_to.png" alt="Zet de sprite op de (x, y) positie neer." />. De nieuwe instructies zijn dan:</li>
+			<li><img src="images/change_position_square.png" alt="Zet de sprite op de (x, y) positie neer." /></li>
+		</ul>
+      </section>
+</div>
+
+
+
+<div class="slide">
+<header>
+  <h1>MEER vierkanten maken</h1>
+</header>
+<section class="content">
+    <ul>
+        <li>Maar... wij willen meer dan alleen één vierkant.</li>
+        <li>Experiment 1: maak een kopie van de huidige instructies en verander dan de X en Y waarden om de sprite op een andere plek neer te zetten.</li>
+		<li>Klik met de rechter muisknop op "ga naar..." en selecter "kopie maken". Probeer verschillende waarden voor X en Y uit.</li>
+        <li><img src="images/duplicate_code.png" alt="Maak een kopie van de huidige instructies." /></li>
+		<li>Nu hebben wij 2 vierkanten op 2 verschillende plekken. Cool!</li>
+		<li>Let op: Kijk goed naar de instructies. Het enige verschil zijn de waarden van X en Y. We hebben net een kopie gemaakt en alleen de waarden aangepast.</li>
+	</ul>
+  </section>
+</div>
+
+
+
+<div class="slide">
+<header>
+  <h1>De limitaties van ons experiment...</h1>
+</header>
+<section class="content">
+    <ul>
+        <li>Nou hebben wij alleen 2(!) vierkanten. :-(</li>
+        <li>Als wij verschillende plekken willen, moeten wij de waarden altijd aanpassen voordat wij de spel starten. Dat is NIET handig... :/</li>
+		<li>Als wij meer vierkanten willen, moeten wij meer kopieën maken en nog meer waarden aanpassen. Dat is ook NIET handig... :/</li>
+        <li>Meer instructies betekent meer werk en een grotere kans dat wij fouten maken.</li>
+		<li>Er moet een andere manier zijn om dit te doen! Iets dat makkelijker, slimmer, korter is...?</li>
+		<li>Daarvoor hebben we.... Blokken!</li>
+	</ul>
+  </section>
+</div>
+
+<div class="slide">
+<header>
+  <h1>Blokken?</h1>
+</header>
+<section class="content">
+	<ul>
+		<li>Zo maak je een blok. <strong>Meer blokken</strong>-><strong>Maak een blok</strong>->Geef jouw blok zijn eigen naam. Mijn blok heet "maakEenVierkant"</li>
+		<li><img src="images/make_a_block.png" alt="Een nieuwe blok maaken."/></li>
+		<li>Ons gloednieuwe blok heeft wel een naam, maar nog geen inhoud. Hierin zetten wij de instructies om een vierkant te tekenen.</li>
+		<li><img src="images/new_block_content.png" alt="Nieuw blok met instructies."/></li>
+	</ul>
+  </section>
+
+</div>
+
+
+<div class="slide">
+<header>
+  <h1>Blok gebruiken</h1>
+</header>
+<section class="content">
+	<ul>
+		<li>Let op: Ons nieuwe blok is alleen zichtbaar voor de huidige sprite (en alleen die kan het blok gebruiken).</li>
+		<li>Probeer dit:<img src="images/draw_same_square.png" alt="Hetzelfde vierkant tekenen."/></li>
+		<li>Dus... Nu kunnen wij met <strong>één</strong> instructie direct een vierkant tekenen. Dit levert meer voordelen:</li>
+			<ul>
+				<li>Makkelijker hergebruik van een set met instructies. In dit geval: het tekenen van een vierkant.</li>
+				<li>De hoofdinstructies worden makkelijker te lezen en te begrijpen.</li>
+				<li>De hoofdinstructies worden ook korter en de kans om fouten te maken wordt ook kleiner.</li> 
+			</ul>
+		<li>Maar... onze vierkant staat wel steeds weer op hetzelfde plek... :/</li>
+	</ul>
+</section>
+</div>
+
+
+<div class="slide">
+  <header><h1>Blok gebruiken... een beetje anders.</h1></header>
+  <section class="content">
+  <ul>
+        <li>Klik met de rechter muisknop op het nieuwe blok en selecteer <stron>bewerken</strong>. Onder <strong>Opties</strong> voeg 3 getalvelden toe.</li>
+        <li><img src="images/add_arguments.png" alt="Blok met getalvelden."/></li>
+        <li>Via deze getalvelden kunnen wij waarden doorgeven aan ons blok voor positie (X en Y) en de maat. Dus: in plaats van number1, number2 en number3 kunnen wij ze <strong>xPositie</strong>, <strong>yPositie</strong> en <strong>maat</strong> noemen.</li>
+		<li>Deze getalvelden zijn <strong>variabelen</strong>. Ze kunnen variëren/veranderen iedere keer dat wij de blokje aanroepen.</li>
+        <li>We geven de waarden aan maar we gebruiken ze nog steeds niet in onze hoofdinstructies. We moeten het blok aanpassen: sleep elke variabele naam op de juiste plek (variabele maat hoort bij "neem ... stappen")</li>
+		<li>Voorbeeld voor xPositie<img src="images/use_variable_in_block.png" alt="Variabelen gebruiken."/></li>
+    </ul>
+  </section>
+</div>
+
+
+
+<div class="slide">
+<header><h1>Wat kunnen we nog meer variëren voor onze tekeningen?</h1></header>
+<section class="content">
+	<p>Ideen om te experimenteren:</p>
+ <ul>
+	 <li>Pendikte.</li>
+	 <li>Pen kleur (een kleur voor alle lijnen of verschillende kleuren voor elke lijn).</li>
+	 <li>Pen helderheid.</li>
+	 <li>Teken een driehoek, een cirkel of een ruit in plaats van een vierkant.</li>
+</ul>
+</section>
+</div>
+
+
+
+<div class="slide">
+  <header><h1>Nieuw blok met variabelen gebruiken</h1></header>
+  <section class="content">
+    <ul>
+      <li>We hebben ons blok veranderd. Nu is het tijd om "maakEenVierkant" te gebruiken. Bijvoorbeeld: <img src="images/use_new_block.png" alt="Nieuw blok gebruiken."/></li>
+      <li>Maar... dat is toch niet willekeurig? Wij zeggen precies waar de tekening moet beginnen en welke maat hij moet hebben. We geven de exacte waarden aan.</li>
+      <li>Gelukig heeft Scratch een oplossing. In <strong>Functies</strong> is er een blok "willekeurig getal tussen ... en ...". Die kunnen wij gebruiken om willekeurige waarden door te geven aan ons maakEenVierkant blok.</li>
+      <li>Vraag: wat zijn de maximum en minimum waarden voor x en y?</li>
+      <li>Nog een verbetering: gebruik een <strong>herhaal</strong> blok om maakEenVierkant meerdere keren aan te roepen.</li>
+      <li>Nu hebben wij het eerste punt van slide 5 af!</li>
+    </ul>
+  </section>
+
+</div>
+
+
+
+<div class="slide">
+  <header><h1>Controleren</h1></header>
+  <section class="content">
+    <ul>
+          <li>Zo ziet mijn programma nu uit:</li>
+          <li><img src="images/draw_square_done.png" alt="Vierkanten tekenen klaar."/></li>
+          <li>Heb jij ongeveer hetzelfde?</li>
+    </ul>
+  </section>
+
+</div>
+
+<div class="slide">
+  <header><h1>Punt 2: Niveau starten en laten zien</h1></header>
+  <section class="content">
+  <div>
+  <ul>
+	  <li>Tot nu toe hebben wij gezien dat ons blok was toegangkelijk alleen voor de sprite waarvoor we deze hebben gemaakt.</li>
+	  <li>Denk aan een niveau waarde: die is altijd zichtbaar, geldt voor alle sprites, achtergronden, blokken, etc.</li>
+	  <li>Dit noemen wij in programmeren een <strong>globale variabele</strong>.</li>
+	  <li>Met zo'n globale variabele kan je makkelijk het niveau aanduiden.</li>
+	  <li>Het nadeel van globale variabele is dat, omdat iedereen hem kan gebruiken, iedereen hem ook kan veranderen! Wees dus voorzichtig met wie (en vanuit waar) jouw niveau verandert!</li>
+  </ul>
+  </div>
+</div>
+
+
+<div class="slide">
+  <header><h1>Punt 2: Niveau variabele maken en laten zien</h1></header>
+  <section class="content">
+  <div>
+  <ul>
+	  <li>Zo maak jij een globale variabele in Scratch: <strong>Data</strong>-><strong>Maak een variabele</strong>. Geef de variabele een naam, en natuurlijk willen wij hem <strong>Voor alle sprites</strong> gebruiken.</li>
+	  <li><img src="images/make_global_variable.png" alt="Globale variabele maken."/></li>
+	  <li>Blijf in het Data-menu en gebruik de instructies "maak Niveau ..." en "toon variabele Niveau" helemaal aan het begin van jouw programma. Nu hebben wij het niveau geïnitializeerd en ook laten zien!</li>
+  </ul>
+  </div>
+</div>
+		  
+<div class="slide">
+  <header><h1>Punt 2: Sprite veranderen</h1></header>
+  <section class="content">
+  <div>
+  <ul>
+        <li>Nu willen wij een andere sprite gebruiken. Kies jouw eigen sprite! Tip: kies voor een bewegende sprite om leuke animaties er bij te krijgen.</li>
+        <li>Deze sprite heeft nog geen instructies. Dit moeten wij helemaal opnieuw programmeren. Wees niet bang, wij hoeven niet veel te doen!</li>
+        <li>Dit is de tweede sprite. Hij moet niet meteen zichtbaar zijn, maar pas als het tekenen van vierkanten klaar is. Daarom gebruiken wij <strong>verdwijn</strong> vanuit <strong>Uiterlijk</strong></li>
+        <li>Wij willen onze sprite bewegen met de pijltjestoetsen (rechts, links, omhoog, omlaag). Maak dan de juiste 4 blokken met instructies om de bewegingen te controleren. Voorbeeld voor rechts: <img src="images/move_to_right.png" alt="Bewegen naar rechts."/></li>
+        <li><small>Omdat ik een bewegende sprite heb gekozen, gebruik in de instructie <strong>volgende uiterlijk</strong> om een animatie tijdens het bewegen te krijgen.</small></li>
+  </ul>
+  </div>
+</section>
+</div>
+
+
+<div class="slide">
+  <header><h1>Overgaan van tekenen naar tweede sprite</h1></header>
+  <section class="content">
+  <div>
+  <ul>
+        <li>Op een één of andere manier moeten wij weten wanneer Scratch klaar is met het tekenen van de vierkanten, zodat we met de tweede sprite kunnen beginnen.</li>
+		<li>Daarvoor heeft Scratch in <strong>Gebeurtenissen</strong> de instructie <strong>zend signaal...</strong>!</li>
+		<li>Ga terug naar jouw eerste sprite en zet na de herhaalinstructie het blok "zend signaal ..." neer.</li>
+		<li>Om dit duidelijker te maken noem ik mijn bericht "tekenen is klaar".</li>
+		<li>Omdat wij klaar zijn met tekenen kunnen we ook onze eerste sprite laten verdwijnen. Vergeet dan niet om het blok "verschijn" te gebruiken aan de start van jouw programma</li>
+  </ul>
+  </section>
+</div>
+
+<div class="slide">
+  <header><h1>Instructies voor de eerste sprite controleren</h1></header>
+  <section class="content">
+  <div>
+  <ul>
+        <li>Met de "verschijn"/"verdwijn" en "zend signaal" instructies, ziet mijn programma er zo uit voor de eerste sprite:</li>
+		<li><img src="images/send_signal_show_hide.png" alt="Bewegen naar rechts."/></li>
+	</ul>
+</div>
+</section>
+</div>	
+
+<div class="slide">
+  <header><h1>Tweede sprite ontvangt signaal</h1></header>
+    <section class="content">
+      <ul>
+		  <li>Nu kunnen we naar onze tweede sprite gaan om dit signaal controleren! Gebruik de instructie <strong>wanneer ik signaal "tekenen is klaar" 			ontvang</strong></li>
+		  <li>Natuurlijk moeten wij onze tweede sprite goed initialiseren:</li>
+		  	<ul>
+				<li>Wijs het in het juiste richting</li>
+				<li>Zet de sprite op de startpositie (midden links)</li>
+				<li>Ik maak ook mijn sprite een beetje kleiner zodat deze goed bij mijn kleine vierkanten past</li>
+				<li>En zichtbaar maken!</li>
+			</ul>
+			<li>Bijvoorbeeld: <img src="images/receive_signal.png" alt="Ontvang signaal."/></li>
+      </ul>
+    </section>
+</div>
+
+
+<div class="slide">
+<header><h1>Mogelijk gemaakt door:</h1></header>
+<section class="content">
+<ul>
+<li><a href="http://www.leswiki.nl/ict/zelf-blokken-bouwen-in-scratch-2-0/">Paul Koning les</a> </li>
+<li><a href="https://github.com/estelle/slides">Slides door Estelle Weyl</a></li>
+<li><a href="https://scratch.mit.edu/">Scratch!</a></li>
+<li>Spellingscheck door: Timo Bakx</li>
+</ul>
+</section>
+</div>
+
+     <script src="assets/slides.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </body></html>
