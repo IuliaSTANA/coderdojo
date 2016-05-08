@@ -11,8 +11,8 @@
 <div class="presentation">
 
   <ul>
-    <li class="button cancel" id="back">Achter</li>
-    <li class="button done" id="next">Voor</li>
+    <li class="button cancel" id="back">Vorige</li>
+    <li class="button done" id="next">Volgende</li>
   </ul>
 
 <div class="slides">
@@ -125,13 +125,13 @@ in Scratch</h2>
 
 <div class="slide">
 <header>
-  <h1>De limitaties van ons experiment...</h1>
+  <h1>De beperkingen van ons experiment...</h1>
 </header>
 <section class="content">
     <ul>
-        <li>Nou hebben wij alleen 2(!) vierkanten. :-(</li>
-        <li>Als wij verschillende plekken willen, moeten wij de waarden altijd aanpassen voordat wij de spel starten. Dat is NIET handig... :/</li>
-		<li>Als wij meer vierkanten willen, moeten wij meer kopieën maken en nog meer waarden aanpassen. Dat is ook NIET handig... :/</li>
+        <li>We hebben nu maar 2(!) vierkanten. :-(</li>
+        <li>Als we verschillende plekken voor de vierkanten willen, moeten wij de waarden altijd aanpassen voordat wij de spel starten. Dat is NIET handig... :/</li>
+		<li>Als we meer vierkanten willen, moeten wij meer kopieën maken en nog meer waarden aanpassen. Dat is ook NIET handig... :/</li>
         <li>Meer instructies betekent meer werk en een grotere kans dat wij fouten maken.</li>
 		<li>Er moet een andere manier zijn om dit te doen! Iets dat makkelijker, slimmer, korter is...?</li>
 		<li>Daarvoor hebben we.... Blokken!</li>
@@ -179,12 +179,12 @@ in Scratch</h2>
   <header><h1>Blok gebruiken... een beetje anders.</h1></header>
   <section class="content">
   <ul>
-        <li>Klik met de rechter muisknop op het nieuwe blok en selecteer <stron>bewerken</strong>. Onder <strong>Opties</strong> voeg 3 getalvelden toe.</li>
+        <li>Klik met de rechter muisknop op het nieuwe blok en selecteer <stron>bewerken</strong>. Voeg onder <strong>Opties</strong> 3 getalvelden toe.</li>
         <li><img src="images/add_arguments.png" alt="Blok met getalvelden."/></li>
         <li>Via deze getalvelden kunnen wij waarden doorgeven aan ons blok voor positie (X en Y) en de maat. Dus: in plaats van number1, number2 en number3 kunnen wij ze <strong>xPositie</strong>, <strong>yPositie</strong> en <strong>maat</strong> noemen.</li>
 		<li>Deze getalvelden zijn <strong>variabelen</strong>. Ze kunnen variëren/veranderen iedere keer dat wij de blokje aanroepen.</li>
-        <li>We geven de waarden aan maar we gebruiken ze nog steeds niet in onze hoofdinstructies. We moeten het blok aanpassen: sleep elke variabele naam op de juiste plek (variabele maat hoort bij "neem ... stappen")</li>
-		<li>Voorbeeld voor xPositie<img src="images/use_variable_in_block.png" alt="Variabelen gebruiken."/></li>
+        <li>We geven de waarden aan maar we gebruiken ze nog steeds niet in onze hoofdinstructies. We moeten het blok aanpassen: sleep elke variabele naam op de juiste plek (de variabele <strong>maat</strong> hoort bij "neem ... stappen")</li>
+		<li>Voorbeeld voor <strong>xPositie</strong>: <img src="images/use_variable_in_block.png" alt="Variabelen gebruiken."/></li>
     </ul>
   </section>
 </div>
@@ -212,7 +212,7 @@ in Scratch</h2>
     <ul>
       <li>We hebben ons blok veranderd. Nu is het tijd om "maakEenVierkant" te gebruiken. Bijvoorbeeld: <img src="images/use_new_block.png" alt="Nieuw blok gebruiken."/></li>
       <li>Maar... dat is toch niet willekeurig? Wij zeggen precies waar de tekening moet beginnen en welke maat hij moet hebben. We geven de exacte waarden aan.</li>
-      <li>Gelukig heeft Scratch een oplossing. In <strong>Functies</strong> is er een blok "willekeurig getal tussen ... en ...". Die kunnen wij gebruiken om willekeurige waarden door te geven aan ons maakEenVierkant blok.</li>
+      <li>Gelukig heeft Scratch een oplossing. In <strong>Functies</strong> is er een blok "willekeurig getal tussen ... en ...". Dat blok kunnen wij gebruiken om willekeurige waarden door te geven aan ons maakEenVierkant blok.</li>
       <li>Vraag: wat zijn de maximum en minimum waarden voor x en y?</li>
       <li>Nog een verbetering: gebruik een <strong>herhaal</strong> blok om maakEenVierkant meerdere keren aan te roepen.</li>
       <li>Nu hebben wij het eerste punt van slide 5 af!</li>
@@ -240,7 +240,7 @@ in Scratch</h2>
   <section class="content">
   <div>
   <ul>
-	  <li>Tot nu toe hebben wij gezien dat ons blok was toegangkelijk alleen voor de sprite waarvoor we deze hebben gemaakt.</li>
+	  <li>Tot nu toe hebben wij gezien dat ons blok alleen toegankelijk was voor de sprite waarvoor we deze hebben gemaakt.</li>
 	  <li>Denk aan een niveau waarde: die is altijd zichtbaar, geldt voor alle sprites, achtergronden, blokken, etc.</li>
 	  <li>Dit noemen wij in programmeren een <strong>globale variabele</strong>.</li>
 	  <li>Met zo'n globale variabele kan je makkelijk het niveau aanduiden.</li>
@@ -271,7 +271,7 @@ in Scratch</h2>
         <li>Deze sprite heeft nog geen instructies. Dit moeten wij helemaal opnieuw programmeren. Wees niet bang, wij hoeven niet veel te doen!</li>
         <li>Dit is de tweede sprite. Hij moet niet meteen zichtbaar zijn, maar pas als het tekenen van vierkanten klaar is. Daarom gebruiken wij <strong>verdwijn</strong> vanuit <strong>Uiterlijk</strong></li>
         <li>Wij willen onze sprite bewegen met de pijltjestoetsen (rechts, links, omhoog, omlaag). Maak dan de juiste 4 blokken met instructies om de bewegingen te controleren. Voorbeeld voor rechts: <img src="images/move_to_right.png" alt="Bewegen naar rechts."/></li>
-        <li><small>Omdat ik een bewegende sprite heb gekozen, gebruik in de instructie <strong>volgende uiterlijk</strong> om een animatie tijdens het bewegen te krijgen.</small></li>
+        <li><small>Omdat ik een bewegende sprite heb gekozen, gebruik ik in de instructie <strong>volgende uiterlijk</strong> om een animatie tijdens het bewegen te krijgen.</small></li>
   </ul>
   </div>
 </section>
@@ -313,7 +313,7 @@ in Scratch</h2>
 		  	<ul>
 				<li>Wijs het in het juiste richting</li>
 				<li>Zet de sprite op de startpositie (midden links)</li>
-				<li>Ik maak ook mijn sprite een beetje kleiner zodat deze goed bij mijn kleine vierkanten past</li>
+				<li>Ik maak mijn sprite ook een beetje kleiner zodat deze goed bij mijn kleine vierkanten past</li>
 				<li>En zichtbaar maken!</li>
 			</ul>
 			<li>Bijvoorbeeld: <img src="images/receive_signal.png" alt="Ontvang signaal."/></li>
@@ -327,7 +327,7 @@ in Scratch</h2>
       <ul>
 		  <li>Maak een globale variabele voor punten. Dit moet je initialiseren met 100 en tonen aan het begin van jouw programma. </li>
 		  <li><small>Doe dit na de niveau instructies.</small></li>
-		  <li>Voor jouw tweede sprite, in de beweging instructies ga jij de punten veranderen als je de kleur van jouw vierkant aanraakt.</li>
+		  <li>Voor jouw tweede sprite: in de beweging instructies ga jij de punten telling veranderen als je de kleur van jouw vierkant aanraakt.</li>
 		  <li>Bijvoorbeeld: <img src="images/count_points.png" alt="Punten tellen."/></li>
 		  <li>Dit moet je doen voor iedere beweging: rechts, links, omhoog omlaag</li>
       </ul>
@@ -342,8 +342,8 @@ in Scratch</h2>
 		  <li>Dus op het bewegen naar rechts zetten wij de volgende instructies:</li>
 		  <li><img src="images/send_second_signal.png" alt=" tellen."/></li>
 	  </ul>
-  </section
-<div>
+  </section>
+</div>
 	
 <div class="slide">
   <header><h1>Nieuw niveau maken</h1></header>
@@ -353,8 +353,8 @@ in Scratch</h2>
 		  <li>Omdat wij de instructies voor het maken van een niveau moeten hergebruiken heb ik ze in een apart blok gezet. Dan ziet mijn programma zo uit:</li>
 		  <li><img src="images/remake_levels.png" alt=" Nieuw niveau maken."/></li>
 	  </ul>
-  </section
-<div>
+  </section>
+</div>
 
 
 <div class="slide">
@@ -378,6 +378,6 @@ in Scratch</h2>
 </section>
 </div>
 
-     <script src="assets/slides.js"></script>
+<script src="assets/slides.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-  </body></html>
+</body></html>
